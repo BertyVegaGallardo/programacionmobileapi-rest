@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>{{dato.id}} {{dato.title}}</ion-title>
+
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref='/tabs/tab3'></ion-back-button>
+      </ion-buttons>
+
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content [fullscreen]>
+  <ion-card>
+    <ion-card-content>
+      {{dato.body}}
+  </ion-card-content>
+</ion-card>
+
+</ion-content>

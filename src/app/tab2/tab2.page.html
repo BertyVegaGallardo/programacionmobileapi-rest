@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista Api Rest</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list *ngFor="let dato of datosObservable | async">
+    <ion-item>
+        <ion-label>
+         {{dato.id}} {{dato.title}}
+        </ion-label>
+      </ion-item>
+  </ion-list>
+
+
+
+
+  <ion-row class="ion-align-items-center">
+    <ion-col size="12" class="ion-text-center">
+      <ion-button routerLink="/home" routerDirection="back">Volver a home</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

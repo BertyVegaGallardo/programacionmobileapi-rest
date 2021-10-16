@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tab 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngFor="let dato of datosObservable | async">
+    <ion-item [routerLink]="['./', dato.id]">
+        <ion-label>
+         {{dato.id}} {{dato.title}}
+        </ion-label>
+      </ion-item>
+  </ion-list>
+ </ion-content>
+
